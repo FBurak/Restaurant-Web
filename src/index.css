@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+html, body, #root { height: 100%; }
+body { @apply font-inter bg-panel text-ink; }
+
+/* Input standardı */
+.input {
+  @apply w-full px-3 py-3 rounded-lg border border-line bg-white text-[14px] shadow-soft outline-none;
+}
+.input::placeholder { @apply text-sub; }
+
+/* ReactQuill */
+.ql-toolbar.ql-snow {
+  @apply rounded-t-lg border border-line bg-white shadow-soft;
+}
+.ql-container.ql-snow {
+  @apply rounded-b-lg border border-line;
+}
+
+/* Section başlıkları */
+.section-title { @apply text-[15px] font-semibold; }
